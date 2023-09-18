@@ -4,7 +4,57 @@
         url("../font/AlfaSlabOne-Regular.ttf");
 }
 
-p{
-    font-family: "AlfaSlabOne";
-    color: blue
+// css
+body{
+    max-width: 576px;
+    margin: 0 auto;
+    background-image: url("../img/fond.webp");
+    > span {
+        font-family: "AlfaSlabOne";
+        background-color: black;
+        color: white;
+        padding: 0.2rem;
+        float: right;
+    }
+}
+
+body > hr
+{
+    clear: both;
+    height: 2px;
+    background-color: black;
+}
+
+#logo img {
+    float: left;
+    width: 9rem;
+    height: 9rem;
+}
+#title-flex{
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 1rem;
+    margin: 0;
+    height: 9rem;
+    h1{
+        font-family: "AlfaSlabOne";
+        margin: 0;
+        span {
+            color: grey
+        }
+    }
+    h2{
+        background-color: black;
+        color: white;
+        font-family: "AlfaSlabOne";
+        font-size: 0.6rem;
+        padding: 0.7rem;
+        border-radius: 5px;
+    }
+    h4{
+        font-family: "AlfaSlabOne";
+        text-transform: uppercase;
+        color: grey;
+        margin-top: 10px;
+    }
 }
