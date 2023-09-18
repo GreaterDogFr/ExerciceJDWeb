@@ -25,6 +25,7 @@ body > hr
     background-color: black;
 }
 
+// header
 #logo img {
     float: left;
     width: 9rem;
@@ -57,4 +58,55 @@ body > hr
         color: grey;
         margin-top: 10px;
     }
+}
+// main
+.container{
+    padding: 0 4rem;
+    .children{
+        background: linear-gradient(180deg, #f7eaea 40%, #bbb0b0 100%);
+        // Todo Gradiant blanc vers gris + Drop shadow
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 10px 5px 5px black;
+        h3{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 10px;
+            font-size: 1.5rem;
+        }
+        .box{
+            margin: 0.5rem;
+            width: 12rem;
+            float: left;
+            .photo-card{
+                width: 12rem;
+            }
+            .text-box{
+                width: 12rem;
+                background-color: red;
+                font-family: "AlfaSlabOne";
+                color: white;
+                text-align: center;
+            }
+        }
+        p{
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+        button{
+            float: right;
+            background-color: black;
+            color: white;
+            font-family: "AlfaSlabOne";
+            padding: 0.5rem;
+            border-radius: 15px;
+            border: none;
+        }
+    }
+}
+.clear {
+    clear: both;
 }
