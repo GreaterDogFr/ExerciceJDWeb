@@ -2,107 +2,207 @@
   font-family: "AlfaSlabOne";
   src: url("../font/AlfaSlabOne-Regular.ttf");
 }
-body {
-  max-width: 576px;
-  margin: 0 auto;
-  background-image: url("../img/fond.webp");
+@media (min-width: 576px) {
+  body {
+    max-width: 576px;
+    margin: 0 auto;
+    background-image: url("../img/fond.webp");
+  }
+  body > span {
+    font-family: "AlfaSlabOne";
+    background-color: black;
+    color: white;
+    padding: 0.2rem;
+    float: right;
+  }
+  body > hr {
+    clear: both;
+    height: 2px;
+    background-color: black;
+  }
+  #logo img {
+    float: left;
+    width: 9rem;
+    height: 9rem;
+  }
+  #title-flex {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 1rem;
+    margin: 0;
+    height: 9rem;
+  }
+  #title-flex h1 {
+    font-family: "AlfaSlabOne";
+    margin: 0;
+  }
+  #title-flex h1 span {
+    color: grey;
+  }
+  #title-flex h2 {
+    background-color: black;
+    color: white;
+    font-family: "AlfaSlabOne";
+    font-size: 0.6rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+  }
+  #title-flex h4 {
+    font-family: "AlfaSlabOne";
+    text-transform: uppercase;
+    color: grey;
+    margin-top: 10px;
+  }
+  .container {
+    padding: 0 4rem;
+  }
+  .container .children {
+    background: linear-gradient(180deg, #f7eaea 40%, #bbb0b0 100%);
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 10px 5px 5px black;
+  }
+  .container .children h3 {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+  .container .children .box {
+    margin: 0.5rem;
+    width: 12rem;
+    float: left;
+  }
+  .container .children .box .photo-card {
+    width: 12rem;
+  }
+  .container .children .box .text-box {
+    width: 12rem;
+    background-color: red;
+    font-family: "AlfaSlabOne";
+    color: white;
+    text-align: center;
+  }
+  .container .children p {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  .container .children button {
+    float: right;
+    background-color: black;
+    color: white;
+    font-family: "AlfaSlabOne";
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: none;
+  }
+  .clear {
+    clear: both;
+  }
 }
-body > span {
-  font-family: "AlfaSlabOne";
-  background-color: black;
-  color: white;
-  padding: 0.2rem;
-  float: right;
-}
-
-body > hr {
-  clear: both;
-  height: 2px;
-  background-color: black;
-}
-
-#logo img {
-  float: left;
-  width: 9rem;
-  height: 9rem;
-}
-
-#title-flex {
-  display: flex;
-  flex-flow: column nowrap;
-  padding-left: 1rem;
-  margin: 0;
-  height: 9rem;
-}
-#title-flex h1 {
-  font-family: "AlfaSlabOne";
-  margin: 0;
-}
-#title-flex h1 span {
-  color: grey;
-}
-#title-flex h2 {
-  background-color: black;
-  color: white;
-  font-family: "AlfaSlabOne";
-  font-size: 0.6rem;
-  padding: 0.7rem;
-  border-radius: 5px;
-}
-#title-flex h4 {
-  font-family: "AlfaSlabOne";
-  text-transform: uppercase;
-  color: grey;
-  margin-top: 10px;
-}
-
-.container {
-  padding: 0 4rem;
-}
-.container .children {
-  background: linear-gradient(180deg, #f7eaea 40%, #bbb0b0 100%);
-  padding: 0.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 10px 5px 5px black;
-}
-.container .children h3 {
-  background-color: black;
-  color: white;
-  border-radius: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 10px;
-  font-size: 1.5rem;
-}
-.container .children .box {
-  margin: 0.5rem;
-  width: 12rem;
-  float: left;
-}
-.container .children .box .photo-card {
-  width: 12rem;
-}
-.container .children .box .text-box {
-  width: 12rem;
-  background-color: red;
-  font-family: "AlfaSlabOne";
-  color: white;
-  text-align: center;
-}
-.container .children p {
-  font-size: 1.5rem;
-  text-align: justify;
-}
-.container .children button {
-  float: right;
-  background-color: black;
-  color: white;
-  font-family: "AlfaSlabOne";
-  padding: 0.5rem;
-  border-radius: 15px;
-  border: none;
-}
-
-.clear {
-  clear: both;
+@media (min-width: 1200px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url("../img/fond.webp");
+  }
+  body > span {
+    font-family: "AlfaSlabOne";
+    background-color: black;
+    color: white;
+    padding: 0.2rem;
+    float: right;
+  }
+  body > hr {
+    clear: both;
+    height: 2px;
+    background-color: black;
+  }
+  #logo img {
+    float: left;
+    width: 9rem;
+    height: 9rem;
+  }
+  #title-flex {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 1rem;
+    margin: 0;
+    height: 9rem;
+  }
+  #title-flex h1 {
+    font-family: "AlfaSlabOne";
+    margin: 0;
+  }
+  #title-flex h1 span {
+    color: grey;
+  }
+  #title-flex h2 {
+    background-color: black;
+    color: white;
+    font-family: "AlfaSlabOne";
+    font-size: 0.6rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+  }
+  #title-flex h4 {
+    font-family: "AlfaSlabOne";
+    text-transform: uppercase;
+    color: grey;
+    margin-top: 10px;
+  }
+  .container {
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .container .children {
+    background: linear-gradient(180deg, #f7eaea 40%, #bbb0b0 100%);
+    padding: 0.5rem;
+    margin-right: 2rem;
+    box-shadow: 10px 5px 5px black;
+  }
+  .container .children h3 {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+  .container .children .box {
+    margin: 0.5rem;
+    width: 12rem;
+    float: left;
+  }
+  .container .children .box .photo-card {
+    width: 12rem;
+  }
+  .container .children .box .text-box {
+    width: 12rem;
+    background-color: red;
+    font-family: "AlfaSlabOne";
+    color: white;
+    text-align: center;
+  }
+  .container .children p {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  .container .children button {
+    float: right;
+    background-color: black;
+    color: white;
+    font-family: "AlfaSlabOne";
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: none;
+  }
+  .clear {
+    clear: both;
+  }
 }/*# sourceMappingURL=style.css.map */
