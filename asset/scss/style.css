@@ -13,7 +13,8 @@ body {
 }
 @media (min-width: 1200px) {
   body {
-    max-width: 1200px;
+    min-width: 1200px;
+    max-width: 100%;
   }
 }
 body > span {
@@ -74,9 +75,19 @@ body > hr {
   background-color: black;
   color: white;
   font-family: "AlfaSlabOne";
-  font-size: 0.6rem;
-  padding: 0.7rem;
-  border-radius: 5px;
+}
+@media (min-width: 576px) {
+  #title-flex h2 {
+    font-size: 0.6rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  #title-flex h2 {
+    font-size: 1.5rem;
+    border-radius: 10px;
+  }
 }
 #title-flex h4 {
   font-family: "AlfaSlabOne";
@@ -84,15 +95,40 @@ body > hr {
   color: grey;
   margin-top: 10px;
 }
+@media (min-width: 1200px) {
+  #title-flex h4 {
+    font-size: 1.5rem;
+  }
+}
 
-.container {
-  padding: 0 4rem;
+@media (min-width: 576px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
 }
 .container .children {
   background: linear-gradient(180deg, #f7eaea 40%, #bbb0b0 100%);
-  padding: 0.5rem;
-  margin-bottom: 2rem;
   box-shadow: 10px 5px 5px black;
+}
+@media (min-width: 576px) {
+  .container .children {
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container .children {
+    width: 28%;
+    margin: 0 1rem;
+  }
 }
 .container .children h3 {
   background-color: black;
@@ -104,19 +140,25 @@ body > hr {
   font-size: 1.5rem;
 }
 .container .children .box {
-  margin: 0.5rem;
-  width: 12rem;
   float: left;
 }
-.container .children .box .photo-card {
-  width: 12rem;
+@media (min-width: 576px) {
+  .container .children .box {
+    margin: 0.5rem;
+    width: 12rem;
+  }
+}
+@media (min-width: 576px) {
+  .container .children .box .photo-card {
+    width: 12rem;
+  }
 }
 .container .children .box .text-box {
-  width: 12rem;
-  background-color: red;
   font-family: "AlfaSlabOne";
+  background-color: red;
   color: white;
   text-align: center;
+  width: 12rem;
 }
 .container .children p {
   font-size: 1.5rem;
@@ -127,9 +169,18 @@ body > hr {
   background-color: black;
   color: white;
   font-family: "AlfaSlabOne";
-  padding: 0.5rem;
-  border-radius: 15px;
   border: none;
+}
+@media (min-width: 576px) {
+  .container .children button {
+    padding: 0.5rem;
+    border-radius: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .container .children button {
+    padding: 1rem;
+  }
 }
 
 .clear {

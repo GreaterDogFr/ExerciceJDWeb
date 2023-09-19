@@ -16,7 +16,8 @@ body {
     }
 
     @include xl {
-        max-width: $screen-xl-min;
+        min-width: $screen-xl-min;
+        max-width: 100%;
     }
 
     >span {
@@ -77,9 +78,17 @@ body>hr {
         background-color: black;
         color: white;
         font-family: "AlfaSlabOne";
-        font-size: 0.6rem;
-        padding: 0.7rem;
-        border-radius: 5px;
+
+        @include sm {
+            font-size: 0.6rem;
+            padding: 0.7rem;
+            border-radius: 5px;
+        }
+
+        @include xl {
+            font-size: 1.5rem;
+            border-radius: 10px;
+        }
     }
 
     h4 {
@@ -87,19 +96,39 @@ body>hr {
         text-transform: uppercase;
         color: grey;
         margin-top: 10px;
+
+        @include xl {
+            font-size: 1.5rem;
+        }
     }
 }
 
 // main
 .container {
-    padding: 0 4rem;
+    @include sm {
+        padding: 0 4rem;
+    }
+
+    @include xl {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
 
     .children {
         background: linear-gradient(180deg, #f7eaea 40%, #bbb0b0 100%);
-        // Todo Gradiant blanc vers gris + Drop shadow
-        padding: 0.5rem;
-        margin-bottom: 2rem;
         box-shadow: 10px 5px 5px black;
+
+        @include sm {
+            padding: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        @include xl {
+            width: 28%;
+            margin: 0 1rem;
+        }
 
         h3 {
             background-color: black;
@@ -112,20 +141,26 @@ body>hr {
         }
 
         .box {
-            margin: 0.5rem;
-            width: 12rem;
             float: left;
 
-            .photo-card {
+            @include sm {
+                margin: 0.5rem;
                 width: 12rem;
             }
 
+            .photo-card {
+                @include sm {
+                    width: 12rem;
+                }
+
+            }
+
             .text-box {
-                width: 12rem;
-                background-color: red;
                 font-family: "AlfaSlabOne";
+                background-color: red;
                 color: white;
                 text-align: center;
+                width: 12rem;
             }
         }
 
@@ -136,12 +171,18 @@ body>hr {
 
         button {
             float: right;
+
             background-color: black;
             color: white;
             font-family: "AlfaSlabOne";
-            padding: 0.5rem;
-            border-radius: 15px;
             border: none;
+            @include sm{
+                padding: 0.5rem;
+                border-radius: 15px;
+            }
+            @include xl {
+                padding: 1rem;
+            }
         }
     }
 }
