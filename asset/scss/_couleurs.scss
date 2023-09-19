@@ -1,0 +1,11 @@
+@mixin dark-font {
+    background-color: black;
+    color: white;
+    @content
+}
+
+@mixin red-white-font {
+    background-color: red;
+    color: white;
+    @content
+}

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "AlfaSlabOne";
+    src:
+        url("../font/AlfaSlabOne-Regular.ttf");
+}
+
+@mixin AlfaSlabOne{
+        font-family: "AlfaSlabOne";
+    @content
+}

@@ -1,10 +1,6 @@
 @use "_mixin.scss" as *;
-
-@font-face {
-    font-family: "AlfaSlabOne";
-    src:
-        url("../font/AlfaSlabOne-Regular.ttf");
-}
+@use "_couleurs.scss" as *;
+@use "_font.scss" as *;
 
 // css
 body {
@@ -21,10 +17,9 @@ body {
     }
 
     >span {
-        font-family: "AlfaSlabOne";
-        background-color: black;
-        color: white;
         float: right;
+        @include AlfaSlabOne;
+        @include dark-font;
         padding: 0 1rem;
     }
 }
@@ -58,7 +53,7 @@ body>hr {
     }
 
     h1 {
-        font-family: "AlfaSlabOne";
+        @include AlfaSlabOne;
         margin: 0;
 
         @include sm {
@@ -75,9 +70,8 @@ body>hr {
     }
 
     h2 {
-        background-color: black;
-        color: white;
-        font-family: "AlfaSlabOne";
+        @include dark-font ;
+        @include AlfaSlabOne;
 
         @include sm {
             font-size: 0.6rem;
@@ -92,7 +86,7 @@ body>hr {
     }
 
     h4 {
-        font-family: "AlfaSlabOne";
+        @include AlfaSlabOne;
         text-transform: uppercase;
         color: grey;
         margin-top: 10px;
@@ -131,8 +125,7 @@ body>hr {
         }
 
         h3 {
-            background-color: black;
-            color: white;
+            @include dark-font;
             border-radius: 15px;
             text-align: center;
             text-transform: uppercase;
@@ -149,16 +142,15 @@ body>hr {
             }
 
             .photo-card {
-                @include sm {
+                @include xl {
                     width: 12rem;
                 }
 
             }
 
             .text-box {
-                font-family: "AlfaSlabOne";
-                background-color: red;
-                color: white;
+                @include AlfaSlabOne;
+                @include red-white-font;
                 text-align: center;
                 width: 12rem;
             }
@@ -172,17 +164,11 @@ body>hr {
         button {
             float: right;
 
-            background-color: black;
-            color: white;
+            @include dark-font;
             font-family: "AlfaSlabOne";
             border: none;
-            @include sm{
-                padding: 0.5rem;
-                border-radius: 15px;
-            }
-            @include xl {
-                padding: 1rem;
-            }
+            padding: 1rem;
+            border-radius: 15px;
         }
     }
 }

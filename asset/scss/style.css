@@ -18,10 +18,10 @@ body {
   }
 }
 body > span {
+  float: right;
   font-family: "AlfaSlabOne";
   background-color: black;
   color: white;
-  float: right;
   padding: 0 1rem;
 }
 
@@ -148,7 +148,7 @@ body > hr {
     width: 12rem;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
   .container .children .box .photo-card {
     width: 12rem;
   }
@@ -170,17 +170,8 @@ body > hr {
   color: white;
   font-family: "AlfaSlabOne";
   border: none;
-}
-@media (min-width: 576px) {
-  .container .children button {
-    padding: 0.5rem;
-    border-radius: 15px;
-  }
-}
-@media (min-width: 1200px) {
-  .container .children button {
-    padding: 1rem;
-  }
+  padding: 1rem;
+  border-radius: 15px;
 }
 
 .clear {
