@@ -10,16 +10,21 @@
 body {
     margin: 0 auto;
     background-image: url("../img/fond.webp");
-    @include sm{
-        max-width: 576px;
+
+    @include sm {
+        max-width: $screen-sm-min;
+    }
+
+    @include xl {
+        max-width: $screen-xl-min;
     }
 
     >span {
         font-family: "AlfaSlabOne";
         background-color: black;
         color: white;
-        padding: 0.2rem;
         float: right;
+        padding: 0 1rem;
     }
 }
 
@@ -27,6 +32,7 @@ body>hr {
     clear: both;
     height: 2px;
     background-color: black;
+    margin: 0;
 }
 
 // header
@@ -41,11 +47,26 @@ body>hr {
     flex-flow: column nowrap;
     padding-left: 1rem;
     margin: 0;
-    height: 9rem;
+
+    @include sm {
+        height: 9rem;
+    }
+
+    @include xl {
+        height: 15rem;
+    }
 
     h1 {
         font-family: "AlfaSlabOne";
         margin: 0;
+
+        @include sm {
+            font-size: 2rem;
+        }
+
+        @include xl {
+            font-size: 4rem;
+        }
 
         span {
             color: grey

@@ -11,18 +11,24 @@ body {
     max-width: 576px;
   }
 }
+@media (min-width: 1200px) {
+  body {
+    max-width: 1200px;
+  }
+}
 body > span {
   font-family: "AlfaSlabOne";
   background-color: black;
   color: white;
-  padding: 0.2rem;
   float: right;
+  padding: 0 1rem;
 }
 
 body > hr {
   clear: both;
   height: 2px;
   background-color: black;
+  margin: 0;
 }
 
 #logo img {
@@ -36,11 +42,30 @@ body > hr {
   flex-flow: column nowrap;
   padding-left: 1rem;
   margin: 0;
-  height: 9rem;
+}
+@media (min-width: 576px) {
+  #title-flex {
+    height: 9rem;
+  }
+}
+@media (min-width: 1200px) {
+  #title-flex {
+    height: 15rem;
+  }
 }
 #title-flex h1 {
   font-family: "AlfaSlabOne";
   margin: 0;
+}
+@media (min-width: 576px) {
+  #title-flex h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  #title-flex h1 {
+    font-size: 4rem;
+  }
 }
 #title-flex h1 span {
   color: grey;
